@@ -10,6 +10,8 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
 import RequreAuth from './Pages/Login/RequreAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
         <Route path="about" element={<About />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
